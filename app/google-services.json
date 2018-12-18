@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "726246825934",
+    "firebase_url": "https://diagnosisdokter.firebaseio.com",
+    "project_id": "diagnosisdokter",
+    "storage_bucket": "diagnosisdokter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726246825934:android:24bb44a38b30b4fd",
+        "android_client_info": {
+          "package_name": "com.dinosoft.diadok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726246825934-j147uf163qc135o5dtm3cpu2gh0238jl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dinosoft.diadok",
+            "certificate_hash": "a07885b782c2f9c444d8c5ea8e9011406c7016ab"
+          }
+        },
+        {
+          "client_id": "726246825934-dlrejq0t6bctornuj96o4lu3u59t4b1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0c-MIKJiST4jQ8A7FjZk51uVZbmEAMhE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726246825934-dlrejq0t6bctornuj96o4lu3u59t4b1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

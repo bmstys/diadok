@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".KonfirmasiObat">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Konfirmasi"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="DiaDok merekekomendasikan beberapa obat yang dapat anda konsumisi, berikut kami sertakan obat obat tersebut bersama dengan bahan pembentuknya :" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/kandungan_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Obat tersebut bisa anda dapatkan melalui Apotek kesayangan anda, tentunya harus disertai dengan mempertimbangkan kandungan obat tersebut. Sistem kami memberikan kemudahan bagi anda untuk membeli obat yang umum digunakan banyak orang, dengan menekan tombol konfirmasi, anda akan dialihkan ke halaman pembelian obat."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Peringatan!!! : "
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Obat obat ini tidak diperuntukkan bagi penderita gagal ginjal, penyakit hati, malanutrisi, hipertensi. Jika anda sedang hamil/menyusui serta memiliki alergi terhadap suatu obat, mohon untuk mengkonsultasikan obat anda kepada dokter agar diberikan obat yang tepat."
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/amanBeliObat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Saya aman untuk membeli obat ini." />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tombol_konfirmasi_obat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_radius"
+            android:onClick="konfirmasiObat"
+            android:text="Konfirmasi"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/tombol_beranda"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:onClick="homes"
+            android:text="Kembali ke Beranda"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".Tentang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="DiaDok"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DiaDok adalah sebuah aplikasi yang didesain untuk mempermudah pasien dalam mendapatkan hasil diagnosis penyakit yang sedang diderita.Pengguna cukup mennginputkan gejala-gejala yang dialami,  setelah itu sistem akan memberikan hasil  diagnosis dengan 2 ketentuan. \n \nYang pertama, apabila hasil diagnosis dinyatakan  bahwa penyakitnya tidak parah, maka sistem akan  memberikan hasil berupa penyakit yang diderita,  makanan dan minuman yang harus dikonsumsi dan  harus dihindari, serta resep obat untuk membantu  penyembuhan. Dan yang kedua,  apabila hasil  diagnosis dinyatakan bahwa penyakit cukup parah,  maka sistem akan menampilkan hasil berupa  rekomendasi untuk berobat ke dokter yang sesuai  dengan penyakit yang diderita beserta  booking/pemesanan antrian sudah dilakukan oleh  sistem."
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Copyright Dinosoft Company - 2018"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dinosoft.diadok">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/diadok_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/diadok_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name=".Register"
+            android:label="Registrasi Akun"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.MainActivity" />
+        </activity>
+        <activity android:name=".Home" />
+        <activity
+            android:name=".Diagnosis"
+            android:label="Diagnosis"
+            android:parentActivityName=".Home"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Home" />
+        </activity>
+        <activity
+            android:name=".HasilRingan"
+            android:label="Hasil Diagnosis"
+            android:parentActivityName=".Diagnosis">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Diagnosis" />
+        </activity>
+        <activity
+            android:name=".BeliObat"
+            android:label="Beli Obat"
+            android:parentActivityName=".KonfirmasiObat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.KonfirmasiObat" />
+        </activity>
+        <activity
+            android:name=".Tentang"
+            android:label="Tentang DiaDok"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Home" />
+        </activity>
+        <activity
+            android:name=".Riwayat"
+            android:label="Riwayat"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Home" />
+        </activity>
+        <activity
+            android:name=".RiwayatDiagnosis"
+            android:label="Riwayat Diagnosis"
+            android:parentActivityName=".Riwayat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Riwayat" />
+        </activity>
+        <activity
+            android:name=".RiwayatTransaksi"
+            android:label="Riwayat Transaksi"
+            android:parentActivityName=".Riwayat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Riwayat" />
+        </activity>
+        <activity
+            android:name=".VirtualWallet"
+            android:label="Virtual Wallet"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Home" />
+        </activity>
+        <activity
+            android:name=".TopUp"
+            android:label="Top Up Saldo"
+            android:parentActivityName=".VirtualWallet">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.VirtualWallet" />
+        </activity>
+        <activity
+            android:name=".HasilBerat"
+            android:label="Hasil Diagnosis"
+            android:parentActivityName=".Diagnosis">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Diagnosis" />
+        </activity>
+        <activity
+            android:name=".PesanDokter"
+            android:label="Pesan Dokter"
+            android:parentActivityName=".HasilBerat"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.HasilBerat" />
+        </activity>
+        <activity
+            android:name=".PilihJadwal"
+            android:label="Pesan Dokter"
+            android:parentActivityName=".PesanDokter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.PesanDokter" />
+        </activity>
+        <activity
+            android:name=".SuksesPesan"
+            android:label="Pesan Dokter"
+            android:parentActivityName=".PilihJadwal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.PilihJadwal" />
+        </activity>
+        <activity
+            android:name=".SuksesObat"
+            android:label="Beli Obat"
+            android:parentActivityName=".BeliObat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.BeliObat" />
+        </activity>
+        <activity
+            android:name=".EditProfil"
+            android:label="Edit Profil"
+            android:parentActivityName=".Home"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.Home" />
+        </activity>
+        <activity
+            android:name=".KonfirmasiObat"
+            android:label="Konfirmasi"
+            android:parentActivityName=".HasilRingan"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dinosoft.diadok.HasilRingan" />
+        </activity>
+    </application>
+
+</manifest>
